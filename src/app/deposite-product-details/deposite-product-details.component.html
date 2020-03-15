@@ -1,3 +1,14 @@
-<p>
-deposite-product-details works!
-</p>
+<h3>Create new deposite product</h3>
+
+<span>Input following information:</span>
+
+<form [formGroup]="dppForm" (ngSubmit)="onSubmite()">
+	<label>
+    产品名称：
+    <input type="text" formControlName="productName" required>
+  </label>
+
+	<div>
+		<button type="submit" [disabled]="!dppForm.valid">Save</button>
+	</div>
+</form>
