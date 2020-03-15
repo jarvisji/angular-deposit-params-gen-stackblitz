@@ -12,3 +12,9 @@
 		<button type="submit" [disabled]="!dppForm.valid">Save</button>
 	</div>
 </form>
+
+<alert type="success">
+  <strong>Well done!</strong> You successfully read this important alert message.
+</alert>
+
+ <alert type="success" [dismissible]="true" (onClosed)="onClosed(alert)">asdfasf</alert>
